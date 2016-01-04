@@ -1375,11 +1375,11 @@ function testDateCompare() {
       [date1, date2, date3], dates);
 
   // Assert a known millisecond difference between two points in time.
-  assertEquals(-19129478,
-      goog.date.Date.compare(
-          new goog.date.DateTime(1982, goog.date.month.MAR, 12, 6, 48, 32, 354),
-          new goog.date.DateTime(
-              1982, goog.date.month.MAR, 12, 12, 07, 21, 832)));
+  assertEquals(-19129478, goog.date.Date.compare(
+                            new goog.date.DateTime(1982, goog.date.month.MAR,
+                                                   12, 6, 48, 32, 354),
+                            new goog.date.DateTime(1982, goog.date.month.MAR,
+                                                   12, 12, 7, 21, 832)));
 
   // Test dates before the year 0.  Dates are Talk Like a Pirate Day, and
   // Towel Day, 300 B.C. (and before pirates).
